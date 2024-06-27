@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Cuestionario</title>
+</head>
+
+<body>
+    <header>
+        <section id="enlaces">
+            <nav>
+                <div class="nav-container">
+                    <h1>EDUCACION FINANCIERA</h1>
+                    <ul>
+                      <li><a href="index.html">INICIO</a></li>
+                    </ul>
+                </div>
+            </nav> 
+        </section>
+    </header>
+
+    <div class="container">
+        <h2>Calculadora de Remanente</h2>
+    
+        <div class="input-group">
+            <label for="ingresos">Ingresos Mensuales:</label>
+            <input type="number" id="ingresos" placeholder="Ingrese sus ingresos mensuales">
+        </div>
+        
+        <div class="input-group">
+            <label for="egresos">Egresos Mensuales:</label>
+            <input type="number" id="egresos" placeholder="Ingrese sus egresos mensuales">
+        </div>
+    </div>
+
+    <button onclick="calcularRemanente()">Calcular Remanente</button>
+        <div class="result">
+            <h2 id="resultado">REMENENTE: $0</h2>
+        </div>
+    <script src="script.js"></script>
+</body>
